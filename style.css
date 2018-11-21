@@ -30,6 +30,20 @@ body{
     background-color:#fff;
     color:#6f6f6f
 }
+.parallax {
+    /* The image used */
+    background-image: url("images/bg/1a.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 ::-moz-selection{
     color:#fff;
     background:#1981EA
