@@ -2658,3 +2658,36 @@ html[dir=rtl] .slingle_client .client_header{
     -webkit-box-shadow:0 0 40px rgba(0,0,0,.3);
     box-shadow:0 0 40px rgba(0,0,0,.3)
 }
+
+#parent {
+    text-align: justify;
+    font-size: 0.1px; /* IE 9/10 fix */
+}
+#parent li {
+    display: inline-block;
+}
+#parent:after {
+    content: '';
+    width: 100%; /* Ensures justification for single lines */
+    display: inline-block;
+}
+.socialCard {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.socialCard ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* assumes you only want one row */
+}
+.socialCard li{
+    float: left;
+    padding: 2px;
+    width: 150px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
