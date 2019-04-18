@@ -2691,3 +2691,25 @@ html[dir=rtl] .slingle_client .client_header{
     margin-left: auto ;
     margin-right: auto ;
 }
+
+div.container4 {
+
+    position: relative }
+div.container4 p {
+    margin: 10;
+    offset-left: 50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: +50%;
+    transform: translate(-50%, -50%) }
+div.social-span {
+    display: table;
+    width: 100%;
+    table-layout: fixed;    /* For cells of equal size */
+}
+div.social-span span {
+    display: table-cell;
+    text-align: center;
+}
+
