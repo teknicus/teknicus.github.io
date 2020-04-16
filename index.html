@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
 
     <script src="js/bodyScrollLock.min.js"></script>
     <!--meta properties -->
@@ -104,10 +106,10 @@ background-image: url("https://www.transparenttextures.com/patterns/paven.png");
 /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/*background-color: #ffffff;
+background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-background-color: #ffffff;
+/*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
@@ -133,7 +135,12 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             margin-top: -20px;
             
         }
+        .class5 {
+            margin-top: 10px;
+            
+        }
     </style>
+
 
 </head>
 
@@ -142,8 +149,28 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="hide-on-med-and-up">    
-    <div class="row class1 center hide-on-med-and-up">
+    <div class="hide-on-med-and-up"> 
+
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="waves-effect waves-light btn">Button</a></li>
+            <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+            <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+          </ul>
+        </div>
+        
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+
+    <div class="row class1 center">
         <div class="col s6 offset-s3">
             <div class="card white z-depth-5">
                 <div class="class2">
@@ -155,10 +182,10 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             </div>
         </div>
       </div>
+
     </div>
     
 
-    </div>
 
     <div class="row class1 center hide-on-small-only">
 
@@ -166,11 +193,21 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
     </div>
 
-    </div>
 
     <link rel="stylesheet" type="text/css" href="/" media="print" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <script src='js/custom.js'></script>
+    <script>
+      var elem = document.querySelector('.tabs');
+     var options = {}
+     var instance = M.Tabs.init(elem, options);  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+      console.log("reached");
+        </script>
 
 </body>
 
