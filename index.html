@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en-US">
+<html lang="en-US">
 <!--<![endif]-->
 
 <head>
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     
+
 
     <script src="js/bodyScrollLock.min.js"></script>
     <!--meta properties -->
@@ -66,57 +66,54 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
-        
         body {
-
-          /*
+            /*
             background-color: #2d3036;
             background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
              /*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 1*/
-             
-             /*
+            /*
              background-color: #2d3036;
 background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 2*/
-
-/*background-color: #141713;
+            /*background-color: #141713;
 background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 3*/
-/*background-color: #000000;
+            /*background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/felt.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 4*/
-/*background-color: #000000;
+            /*background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 5*/
-/*background-color: #000000;
+            /*background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/*background-color: #ffffff;
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/*background-color: #ffffff;
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ 
-/*background-color: #ffffff;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ 
-/*background-color: #ffffff;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/paven.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/*background-color: #ffffff;
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-background-color: #ffffff;
-background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/*background-color: #ffffff;
+            background-color: #ffffff;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
         
         .class1 {
-            margin-top: 20%;
+            margin-top: 12%;
             width: 100%;
+            padding-bottom: -50px;
         }
         
         .class2 {
@@ -129,15 +126,20 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             font-family: 'Quattrocento', serif;
             font-size: 150%;
             padding-top: 12%;
-            padding-bottom: 15%;
+            padding-bottom: 5%;
         }
+        
         .class4 {
             margin-top: -20px;
-            
+            padding-bottom: -50px;
         }
+        
         .class5 {
             margin-top: 10px;
-            
+        }
+        
+        .carousel .carousel-item {
+            margin-top: -100px;
         }
     </style>
 
@@ -149,65 +151,113 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="hide-on-med-and-up"> 
+    <div class="hide-on-med-and-up">
 
-      <nav>
-        <div class="nav-wrapper black">
-          <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="waves-effect waves-light btn">Button</a></li>
-            <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
-            <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
-          </ul>
-        </div>
-        
-      </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn">Button</a></li>
+                    <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+                    <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+                </ul>
+            </div>
 
-    <div class="row class1 center">
-        <div class="col s6 offset-s3">
-            <div class="card white z-depth-5">
-                <div class="class2">
-                    <span class="card-title center-align">JumpStarts</span>
-                </div>                
-            </div>
-            <div class="class3">
-              <p>Leap Today.</p><p class="class4">Soar Tomorrow.</p>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+
+        <div class="row class1 center">
+            <div class="col s6 offset-s3">
+                <div class="card white z-depth-5">
+                    <div class="class2">
+                        <span class="card-title center-align">JumpStarts</span>
+                    </div>
+                </div>
+                <div class="class3">
+                    <p>Leap Today.</p>
+                    <p class="class4">Soar Tomorrow.</p>
+                    <p class="class4">Hands-On Training on :</p>
+                </div>
+
             </div>
         </div>
-      </div>
+
+        <div class="carousel center class6">
+
+            <div class="carousel-item grey darken-2 white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item grey darken-2 white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item grey darken-2 white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item grey darken-2 white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+
+
+
 
     </div>
-    
+
 
 
     <div class="row class1 center hide-on-small-only">
 
-            Desktop site under construction
+        Desktop site under construction
 
     </div>
 
 
     <link rel="stylesheet" type="text/css" href="/" media="print" />
-    
+
     <script src='js/custom.js'></script>
     <script>
-      var elem = document.querySelector('.tabs');
-     var options = {}
-     var instance = M.Tabs.init(elem, options);  
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var elem = document.querySelector('.tabs');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var options = {}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance = M.Tabs.init(elem, options);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        document.addEventListener('DOMContentLoaded', function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var elems = document.querySelectorAll('.sidenav');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var instances = M.Sidenav.init(elems, options);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
 
-      console.log("reached");
-        </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        document.addEventListener('DOMContentLoaded', function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var elems = document.querySelectorAll('.collapsible');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var instances = M.Collapsible.init(elems, options);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance1 = M.Tabs.init(el, options);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance2 = M.Carousel.init({
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            fullWidth: true
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instance = M.Carousel.init({
+                fullWidth: true,
+                indicators: true
+            });
+        });
+        M.AutoInit();
+
+        console.log("reached");
+    </script>
 
 </body>
 
