@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/particles.min.js"></script>
 
 
     <script src="js/bodyScrollLock.min.js"></script>
@@ -64,23 +65,25 @@ background-image: url("https://www.transparenttextures.com/patterns/paven.png");
 background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
             background-color: #ffffff;
-            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            /*background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+             This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
             /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
         
         .class1 {
-            margin-top: 12%;
+            margin-top: 10%;
             width: 100%;
             margin-bottom: -80px;
+            background-color: transparent;
         }
         
         .class2 {
             font-family: 'Pacifico', cursive;
             padding-top: 9%;
             padding-bottom: 9%;
+            background-color: transparent;
         }
         
         .class3 {
@@ -88,25 +91,41 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             font-size: 150%;
             padding-top: 12%;
             padding-bottom: 5%;
+            background-color: transparent;
         }
         
         .class4 {
             margin-top: -20px;
             padding-bottom: -50px;
+            background-color: transparent;
         }
         
         .class5 {
             margin-top: 10px;
+            background-color: transparent;
         }
         
         .class6 {
             margin-top: -20px;
             margin-bottom: -10px;
+            background-color: transparent;
         }
         
         .carousel .carousel-item {
             margin-top: -100px;
-            margin-bottom: ;
+            margin-bottom: 50px;
+            background-color: transparent;
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
         }
     </style>
 
@@ -132,6 +151,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             </div>
 
         </nav>
+        <div id="particles-js"></div>
         <ul class="sidenav" id="mobile-demo">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
@@ -146,36 +166,41 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                         <span class="card-title center-align">JumpStarts</span>
                     </div>
                 </div>
-                <div class="class3">
-                    <p>Leap Today.</p>
-                    <p class="class4">Soar Tomorrow.</p>
-                    <p class="class6">Hands-On Training on :</p>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card grey darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title center-align">Hands-On Training</span>
+                        <p>Equip yourselves with the right professional skills required to survive in the modern industry. <strong>Jumpstart</strong> your career with us now and learn what it takes to be a competent engineer!</p>
+                    </div>
 
+                </div>
             </div>
         </div>
 
+
         <div class="carousel center">
 
+
             <div class="carousel-item grey darken-2 white-text" href="#one!">
-                <h2>First Panel</h2>
+                <h2>Linux</h2>
                 <p class="white-text">This is your first panel</p>
             </div>
             <div class="carousel-item grey darken-2 white-text" href="#two!">
-                <h2>Second Panel</h2>
+                <h2>GitHub</h2>
                 <p class="white-text">This is your second panel</p>
             </div>
             <div class="carousel-item grey darken-2 white-text" href="#three!">
-                <h2>Third Panel</h2>
+                <h2>Blockchain</h2>
                 <p class="white-text">This is your third panel</p>
             </div>
             <div class="carousel-item grey darken-2 white-text" href="#four!">
-                <h2>Fourth Panel</h2>
+                <h2>Python</h2>
                 <p class="white-text">This is your fourth panel</p>
             </div>
-            <div class="carousel-fixed-item center">
-                <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            </div>
+
         </div>
         <p class="class6">Hands-On Training on :</p>
 
@@ -201,6 +226,125 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
         console.log("reached");
     </script>
+    <script type="text/javascript">
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 150,
+                    density: {
+                        enable: !0,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#000000"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: .5,
+                    random: !1,
+                    anim: {
+                        enable: !1,
+                        speed: 3,
+                        opacity_min: .1,
+                        sync: !1
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: !0,
+                    anim: {
+                        enable: !1,
+                        speed: 40,
+                        size_min: .1,
+                        sync: !1
+                    }
+                },
+                line_linked: {
+                    enable: !0,
+                    distance: 150,
+                    color: "#888",
+                    opacity: .4,
+                    width: 1
+                },
+                move: {
+                    enable: !0,
+                    speed: 6,
+                    direction: "none",
+                    random: !1,
+                    straight: !1,
+                    out_mode: "out",
+                    attract: {
+                        enable: !1,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: !0,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: !0,
+                        mode: "push"
+                    },
+                    resize: !0
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: !0,
+            config_demo: {
+                hide_card: !1,
+                background_color: "#b61924",
+                background_image: "",
+                background_position: "50% 50%",
+                background_repeat: "no-repeat",
+                background_size: "cover"
+            }
+        })
+    </script>
+
 
 </body>
 
