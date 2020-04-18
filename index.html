@@ -215,7 +215,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         </div>
         <div class="row">
             <div class="col s12 m6 center-align">
-                <a class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
+                <a href="https://robinbiju4710.typeform.com/to/h0cKm0" class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
             </div>
         </div>
 
@@ -274,11 +274,11 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
         <div id="modal1" class="modal">
             <div class="modal-content">
-                <h4>Modal Header</h4>
-                <p>A bunch of text</p>
+                <h4>Why Learn from Us?</h4>
+                <p>A bunch of text that convinces you to sign up :p</p>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="https://robinbiju4710.typeform.com/to/h0cKm0" class="modal-close center waves-effect waves-green btn-flat">Register Now!</a>
             </div>
         </div>
 
@@ -322,7 +322,13 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         M.AutoInit();
         var elem = document.querySelector('.modal');
         var instance = M.Modal.init(elem);
-        instance.open();
+
+        setTimeout(function() {
+            instance.open();
+        }, 5000);
+        setTimeout(function() {
+            customerly('close');
+        }, 8000);
 
         console.log("reached");
     </script>
