@@ -12,12 +12,12 @@
     <!-- style and script resources -->
     <link rel="stylesheet" href="" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
     <script src="js/particles.min.js"></script>
 
 
-    <script src="js/bodyScrollLock.min.js"></script>
+    <script src="js/bodyScrolslLock.min.js"></script>
     <!--meta properties -->
 
     <!--powered by meta-->
@@ -151,12 +151,9 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         <nav>
             <div class="nav-wrapper black">
                 <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="waves-effect waves-light btn">Button</a></li>
-                    <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
-                    <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
-                </ul>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger" id="menuButton"><i class="material-icons">menu</i></a>
+                <a class="brand-logo right modal-trigger" href="#modal1"><i class="large material-icons">info</i></a>
+
             </div>
 
         </nav>
@@ -179,7 +176,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         </div>
         <div class="row">
             <div class="col s12 m6">
-                <div class="card grey darken-4">
+                <div class="card grey darken-4 modal-trigger" href="#modal1">
                     <div class="card-content white-text">
                         <span class="card-title center-align">Hands-On Training</span>
                         <p>Equip yourselves with the right professional skills required to survive in the modern industry. <strong>Jumpstart</strong> your career with us now and learn what it takes to be a competent engineer!</p>
@@ -202,7 +199,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         <div class="carousel center">
 
 
-            <div class="carousel-item grey darken-2 white-text" href="#one!">
+            <div class="carousel-item grey darken-2 white-text modal-trigger" href="#modal1">
                 <h5>Programming</h5>
                 <p class="white-text">We offer <b><i>application-oriented</i></b> <br>training on:
                     <ul>
@@ -212,7 +209,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                     </ul>
                 </p>
             </div>
-            <div class="class8 carousel-item grey darken-2 white-text" href="#two!">
+            <div class="class8 carousel-item grey darken-2 white-text modal-trigger" href="#modal1">
                 <h5>Arduino</h5>
                 <p class="white-text">Learn to use the most popular electronics prototyping platform. <br>No Promises broken here, This course will be hands-on too!
                 </p>
@@ -250,11 +247,22 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
 
         </div>
-        <p class="class6">Hands-On Training on :</p>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+
 
         <div class="fixed-action-btn">
             <a class="btn-floating btn-large black pulse">
-                <i class="large material-icons">info</i>
+                <i class="large material-icons">expand_less</i>
             </a>
             <ul>
                 <li><a class="btn-floating grey darken-3"><i class="material-icons">call</i></a></li>
@@ -264,6 +272,8 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
             </ul>
         </div>
+
+
 
 
 
@@ -285,6 +295,9 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
     <script src='js/custom.js'></script>
     <script>
         M.AutoInit();
+        var elem = document.querySelector('.modal');
+        var instance = M.Modal.init(elem);
+        instance.open();
 
         console.log("reached");
     </script>
