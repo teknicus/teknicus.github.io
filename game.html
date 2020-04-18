@@ -141,7 +141,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="hide-on-med-and-up">
+    <div>
 
         <nav>
             <div class="nav-wrapper black">
@@ -155,222 +155,149 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             </div>
 
         </nav>
-        <div id="particles-js"></div>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
+        <div class="col s12 offset-s3">
+            Enter Number b/w 1 and 27:
+            <div class="input-field inline">
+                <input id="oCoin">
 
-        <div class="row class1 center">
-            <div class="col s6 offset-s3">
-                <div class="card white z-depth-5">
-                    <div class="class2">
-                        <span class="card-title center-align">JumpStarts</span>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card grey darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title center-align">Hands-On Training</span>
-                        <p>Equip yourselves with the right professional skills required to survive in the modern industry. <strong>Jumpstart</strong> your career with us now and learn what it takes to be a competent engineer!</p>
-                        <br>
-                        <p class="center">
-                            <Strong><b><i><em>Leap Today. Soar Tomorrow.</em></i></b></Strong>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m6 center-align">
-                <a class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
-            </div>
-        </div>
+        <form action="#">
+            <p>
+                <label>
+                <input name="group1" type="radio" id="g9" />
+                <span>9 grams</span>
+              </label>
+                <label>
+                <input name="group1" type="radio" id="g11"/>
+                <span>11 grams</span>
+              </label>
+            </p>
 
 
-        <div class="carousel center">
+        </form>
 
+        <a class="waves-effect waves-light btn" onclick="compute()">Compute</a>
+        <p id="output"></p>
 
-            <div class="carousel-item grey darken-2 white-text" href="#one!">
-                <h2>Linux</h2>
-                <p class="white-text">This is your first panel</p>
-            </div>
-            <div class="carousel-item grey darken-2 white-text" href="#two!">
-                <h2>GitHub</h2>
-                <p class="white-text">This is your second panel</p>
-            </div>
-            <div class="carousel-item grey darken-2 white-text" href="#three!">
-                <h2>Blockchain</h2>
-                <p class="white-text">This is your third panel</p>
-            </div>
-            <div class="carousel-item grey darken-2 white-text" href="#four!">
-                <h2>Python</h2>
-                <p class="white-text">This is your fourth panel</p>
-            </div>
+        <script>
+            function compute() {
+                let oCoinWeight = 0;
+                if (document.getElementById("g9").checked) {
+                    console.log("Odd coin is 9 grams");
+                    oCoinWeight = 9;
+                } else if (document.getElementById("g11").checked) {
+                    console.log("Odd coin is 11 grams");
+                    oCoinWeight = 11;
+                }
 
-        </div>
-        <p class="class6">Hands-On Training on :</p>
+                let oCoin = document.getElementById("oCoin").value;
 
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large black pulse">
-                <i class="large material-icons">info</i>
-            </a>
-            <ul>
-                <li><a class="btn-floating grey darken-3"><i class="material-icons">call</i></a></li>
-                <li><a class="btn-floating grey darken-3"><i class="material-icons">email</i></a></li>
-                <li><a class="btn-floating grey darken-3"><i class="material-icons">help</i></a></li>
-                <li><a class="btn-floating grey darken-3"><i class="material-icons">group</i></a></li>
+                var i;
+                var group1W = 0,
+                    group2W = 0,
+                    group3W = 0;
+                for (i = 1; i < 10; ++i) {
+                    if (i == oCoin) {
+                        group1W += oCoinWeight;
 
-            </ul>
-        </div>
-
-
-
-
-    </div>
-
-
-
-
-    <div class="row class1 center hide-on-small-only">
-
-        Desktop site under construction
-
-    </div>
-
-
-    <link rel="stylesheet" type="text/css" href="/" media="print" />
-
-    <script src='js/custom.js'></script>
-    <script>
-        M.AutoInit();
-
-        console.log("reached");
-    </script>
-    <script type="text/javascript">
-        particlesJS("particles-js", {
-            particles: {
-                number: {
-                    value: 150,
-                    density: {
-                        enable: !0,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: "#000000"
-                },
-                shape: {
-                    type: "circle",
-                    stroke: {
-                        width: 0,
-                        color: "#000000"
-                    },
-                    polygon: {
-                        nb_sides: 5
-                    },
-                    image: {
-                        src: "img/github.svg",
-                        width: 100,
-                        height: 100
-                    }
-                },
-                opacity: {
-                    value: .5,
-                    random: !1,
-                    anim: {
-                        enable: !1,
-                        speed: 3,
-                        opacity_min: .1,
-                        sync: !1
-                    }
-                },
-                size: {
-                    value: 5,
-                    random: !0,
-                    anim: {
-                        enable: !1,
-                        speed: 40,
-                        size_min: .1,
-                        sync: !1
-                    }
-                },
-                line_linked: {
-                    enable: !0,
-                    distance: 150,
-                    color: "#888",
-                    opacity: .4,
-                    width: 1
-                },
-                move: {
-                    enable: !0,
-                    speed: 6,
-                    direction: "none",
-                    random: !1,
-                    straight: !1,
-                    out_mode: "out",
-                    attract: {
-                        enable: !1,
-                        rotateX: 600,
-                        rotateY: 1200
+                    } else {
+                        group1W += 10;
                     }
                 }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: {
-                        enable: !0,
-                        mode: "repulse"
-                    },
-                    onclick: {
-                        enable: !0,
-                        mode: "push"
-                    },
-                    resize: !0
-                },
-                modes: {
-                    grab: {
-                        distance: 400,
-                        line_linked: {
-                            opacity: 1
-                        }
-                    },
-                    bubble: {
-                        distance: 400,
-                        size: 40,
-                        duration: 2,
-                        opacity: 8,
-                        speed: 3
-                    },
-                    repulse: {
-                        distance: 200
-                    },
-                    push: {
-                        particles_nb: 4
-                    },
-                    remove: {
-                        particles_nb: 2
+
+                for (i = 10; i < 19; ++i) {
+                    if (i == oCoin) {
+                        group2W += oCoinWeight;
+
+                    } else {
+                        group2W += 10;
                     }
                 }
-            },
-            retina_detect: !0,
-            config_demo: {
-                hide_card: !1,
-                background_color: "#b61924",
-                background_image: "",
-                background_position: "50% 50%",
-                background_repeat: "no-repeat",
-                background_size: "cover"
+
+                for (i = 19; i < 28; ++i) {
+                    if (i == oCoin) {
+                        group3W += oCoinWeight;
+
+                    } else {
+                        group3W += 10;
+                    }
+                }
+                console.log("Group 1 weight = " + group1W);
+                console.log("Group 2 weight = " + group2W);
+                console.log("Group 3 weight = " + group3W);
+
+
+
+
+                var opString = "Group 1 weight = " + group1W + "<br>Group 2 weight = " + group2W + "<br>Group 3 weight = " + group3W;
+                var heavier = 0;
+                var identicalPair = 0;
+                var oCoinGroup = 0;
+
+                opString += "<br><br>Performing first Weighing : Group 1 vs Group 2";
+                if (group1W > group2W) {
+                    opString += "<br> Group 1 is Heavier";
+                    heavier = 1;
+                    lighter = 2;
+
+
+                } else if (group1W < group2W) {
+                    opString += "<br> Group 2 is Heavier";
+                    heavier = 2;
+                    lighter = 1;
+
+                } else {
+                    opString += "<br>Group 1 equal to Group 2";
+                    identicalPair = 1;
+
+                }
+
+
+                opString += "<br><br>Performing second Weighing : Group 2 vs Group 3";
+
+                if (group2W > group3W) {
+                    opString += "<br> Group 2 is Heavier";
+                    heavier = 2;
+                    lighter = 3;
+
+                } else if (group2W < group3W) {
+                    opString += "<br> Group 3 is Heavier";
+                    heavier = 3;
+                    lighter = 2;
+
+                } else {
+                    opString += "<br>Group 2 equal to Group 3";
+                    identicalPair = 2;
+
+                }
+
+                if (!heavier)
+                    opString = "Error";
+
+                if (identicalPair == 1)
+
+                    opString += "<br><br>Odd Coin is in Group " + oCoinGroup;
+
+
+
+                document.getElementById("output").innerHTML = opString;
+
+                console.log("Entered Odd coin is " + oCoin);
+
+
+
+
             }
-        })
-    </script>
+        </script>
+
+
+    </div>
+
+
+
+
 
 
 </body>

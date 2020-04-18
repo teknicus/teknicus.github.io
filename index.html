@@ -1,67 +1,29 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html lang="en-US">
-<!--<![endif]-->
+
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="pingback" href="https: //domainname.com/xmlrpc.php" />
+
     <title>JumpStarts</title>
     <!-- style and script resources -->
     <link rel="stylesheet" href="" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/particles.min.js"></script>
 
 
     <script src="js/bodyScrollLock.min.js"></script>
     <!--meta properties -->
-    <meta name="description" content=" Your site description." />
-    <!--detailed robots meta https://developers.google.com/search/reference/robots_meta_tag -->
-    <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
-    <link rel="canonical" href="" />
-    <!--open graph meta tags for social sites and search engines-->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="  Opengraph content 25 char are best" />
-    <meta property="og:description" content="  #description." />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content="images//hom-banner-compressed.jpg" />
-    <meta property="og:image:secure_url" content="images//hom-banner-compressed.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="660" />
-    <!--twitter description-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="." />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:site" content="@" />
-    <meta name="twitter:image" content="images/hom-banner-compressed.jpg" />
-    <meta name="twitter:creator" content="@" />
-    <!--opengraph tags for location or address for information panel in google-->
-    <meta name="og:latitude" content="" />
-    <meta name="og:longitude" content="" />
-    <meta name="og:street-address" content="" />
-    <meta name="og:locality" content="" />
-    <meta name="og:region" content="" />
-    <meta name="og:postal-code" content="" />
-    <meta name="og:country-name" content="" />
-    <!--search engine verification-->
-    <meta name="google-site-verification" content="" />
-    <meta name="yandex-verification" content="" />
+
     <!--powered by meta-->
     <meta name="generator" content="" />
     <!-- Site fevicon icons -->
-    <link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-32x32.png" sizes="32x32" />
-    <link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="images/icon/cropped-cropped-favicon-1-1-180x180.png" />
-    <meta name="msapplication-TileImage" content="images/icon/cropped-cropped-favicon-1-1-270x270.png" />
-    <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -103,23 +65,25 @@ background-image: url("https://www.transparenttextures.com/patterns/paven.png");
 background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
             background-color: #ffffff;
-            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            /*background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+             This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
             /*background-color: #ffffff;
 background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
         
         .class1 {
-            margin-top: 12%;
+            margin-top: 10%;
             width: 100%;
-            padding-bottom: -50px;
+            margin-bottom: -80px;
+            background-color: transparent;
         }
         
         .class2 {
             font-family: 'Pacifico', cursive;
             padding-top: 9%;
             padding-bottom: 9%;
+            background-color: transparent;
         }
         
         .class3 {
@@ -127,19 +91,50 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             font-size: 150%;
             padding-top: 12%;
             padding-bottom: 5%;
+            background-color: transparent;
         }
         
         .class4 {
             margin-top: -20px;
             padding-bottom: -50px;
+            background-color: transparent;
         }
         
         .class5 {
             margin-top: 10px;
+            background-color: transparent;
+        }
+        
+        .class6 {
+            margin-top: -20px;
+            margin-bottom: -10px;
+            background-color: transparent;
+        }
+        
+        .class7 {
+            border-radius: 30px;
+        }
+        
+        .class8 {
+            padding-left: 3%;
+            padding-right: 3%;
         }
         
         .carousel .carousel-item {
-            margin-top: -100px;
+            margin-top: -85px;
+            margin-bottom: 50px;
+            background-color: transparent;
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
         }
     </style>
 
@@ -165,6 +160,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             </div>
 
         </nav>
+        <div id="particles-js"></div>
         <ul class="sidenav" id="mobile-demo">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
@@ -179,39 +175,101 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                         <span class="card-title center-align">JumpStarts</span>
                     </div>
                 </div>
-                <div class="class3">
-                    <p>Leap Today.</p>
-                    <p class="class4">Soar Tomorrow.</p>
-                    <p class="class4">Hands-On Training on :</p>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card grey darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title center-align">Hands-On Training</span>
+                        <p>Equip yourselves with the right professional skills required to survive in the modern industry. <strong>Jumpstart</strong> your career with us now and learn what it takes to be a competent engineer!</p>
+                        <br>
+                        <p class="center">
+                            <Strong><b><i><em>Leap Today. Soar Tomorrow.</em></i></b></Strong>
+                        </p>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 center-align">
+                <a class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
             </div>
         </div>
 
-        <div class="carousel center class6">
+
+        <div class="carousel center">
+
 
             <div class="carousel-item grey darken-2 white-text" href="#one!">
-                <h2>First Panel</h2>
-                <p class="white-text">This is your first panel</p>
+                <h5>Programming</h5>
+                <p class="white-text">We offer <b><i>application-oriented</i></b> <br>training on:
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </p>
             </div>
-            <div class="carousel-item grey darken-2 white-text" href="#two!">
-                <h2>Second Panel</h2>
-                <p class="white-text">This is your second panel</p>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#two!">
+                <h5>Arduino</h5>
+                <p class="white-text">Learn to use the most popular electronics prototyping platform. <br>No Promises broken here, This course will be hands-on too!
+                </p>
             </div>
-            <div class="carousel-item grey darken-2 white-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="white-text">This is your third panel</p>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#three!">
+                <h5>Web Dev</h5>
+                <p class="white-text">Learn to code for the web and build modern WebSites like this one. We will tailor the course according to your level of experience.
+                </p>
             </div>
-            <div class="carousel-item grey darken-2 white-text" href="#four!">
-                <h2>Fourth Panel</h2>
-                <p class="white-text">This is your fourth panel</p>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#four!">
+                <h5>Linux</h5>
+                <p class="white-text">Linux runs the digital world. Knowing to use Linux is vital for any programmer. Whether your a newbie or if you've dipped your toes in Linux, this course is right for you!
+                </p>
             </div>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#five!">
+                <h5>IoT</h5>
+                <p class="white-text">Get started on your way to making things smarter every day! Learn about the Internet of Things first hand by making your own Smart Thing.
+                </p>
+            </div>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#six!">
+                <h5>NodeJS</h5>
+                <p class="white-text">Witness the true potential of JavaScript with the NodeJS Runtime Environment and learn to program for the modern web.
+                </p>
+            </div>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#seven!">
+                <h5>GitHub</h5>
+                <p class="white-text">Learn to use the largest software development platform and the driving force behind OpenSourceSoftware along with essential Git instructions.
+                </p>
+            </div>
+            <div class="class8 carousel-item grey darken-2 white-text" href="#eight!">
+                <h5>Blockchain</h5>
+                <p class="white-text">Being one of the most promising technologies that has proved its mettle in the past decade, Knowing to work with Blockchain is surely a great addition to your Resume.
+                </p>
+            </div>
+
+
+        </div>
+        <p class="class6">Hands-On Training on :</p>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large black pulse">
+                <i class="large material-icons">info</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating grey darken-3"><i class="material-icons">call</i></a></li>
+                <li><a class="btn-floating grey darken-3"><i class="material-icons">email</i></a></li>
+                <li><a class="btn-floating grey darken-3"><i class="material-icons">help</i></a></li>
+                <li><a class="btn-floating grey darken-3"><i class="material-icons">group</i></a></li>
+
+            </ul>
         </div>
 
 
 
 
     </div>
+
 
 
 
@@ -226,38 +284,129 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
     <script src='js/custom.js'></script>
     <script>
-        /*
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var elem = document.querySelector('.tabs');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var options = {}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance = M.Tabs.init(elem, options);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        document.addEventListener('DOMContentLoaded', function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var elems = document.querySelectorAll('.sidenav');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var instances = M.Sidenav.init(elems, options);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        document.addEventListener('DOMContentLoaded', function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var elems = document.querySelectorAll('.collapsible');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var instances = M.Collapsible.init(elems, options);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance1 = M.Tabs.init(el, options);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var instance2 = M.Carousel.init({
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            fullWidth: true
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        });
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            var instance = M.Carousel.init({
-                fullWidth: true,
-                indicators: true
-            });
-        });
         M.AutoInit();
 
         console.log("reached");
     </script>
+    <script type="text/javascript">
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 150,
+                    density: {
+                        enable: !0,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#000000"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: .5,
+                    random: !1,
+                    anim: {
+                        enable: !1,
+                        speed: 3,
+                        opacity_min: .1,
+                        sync: !1
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: !0,
+                    anim: {
+                        enable: !1,
+                        speed: 40,
+                        size_min: .1,
+                        sync: !1
+                    }
+                },
+                line_linked: {
+                    enable: !0,
+                    distance: 150,
+                    color: "#888",
+                    opacity: .4,
+                    width: 1
+                },
+                move: {
+                    enable: !0,
+                    speed: 6,
+                    direction: "none",
+                    random: !1,
+                    straight: !1,
+                    out_mode: "out",
+                    attract: {
+                        enable: !1,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: !0,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: !0,
+                        mode: "push"
+                    },
+                    resize: !0
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: !0,
+            config_demo: {
+                hide_card: !1,
+                background_color: "#b61924",
+                background_image: "",
+                background_position: "50% 50%",
+                background_repeat: "no-repeat",
+                background_size: "cover"
+            }
+        })
+    </script>
+
 
 </body>
 
