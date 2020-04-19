@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="js/materialize.min.js"></script>
     <script src="js/particles.min.js"></script>
     <!-- Customerly Integration Code -->
@@ -145,7 +147,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         }
         
         .class9 {
-            margin-top: 20%;
+            margin-top: 10%;
         }
         
         .class10 {
@@ -185,13 +187,16 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
             <div class="nav-wrapper black">
                 <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger" id="menuButton"><i class="material-icons">menu</i></a>
-                <a class="brand-logo right modal-trigger" id="why" href="#modal1"><i class="large material-icons">info</i></a>
+                <a class="brand-logo right modal-trigger" id="why" href="#whyModal"><i class="large material-icons">info</i></a>
 
             </div>
 
         </nav>
         <div id="particles-js"></div>
         <ul class="sidenav" id="mobile-demo">
+            <div class="center" style="margin-top: 5%;">
+                <a href="#!" class="brand-logo class5"><img src="equilateral.png" height="35" width="35" alt="logo" srcset="img/computer.svg"></a>
+            </div>
             <li class="class9 center">
                 <a href="badges.html">Course Details</a>
             </li>
@@ -200,13 +205,25 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                 <a href="badges.html">Pricing</a>
             </li>
             <div class="divider"></div>
+            <li class="center modal-trigger" href="#aboutModal">
+                <a>About Us</a>
+            </li>
+            <div class="divider"></div>
             <li class="center">
-                <a href="collapsible.html">About Us</a>
+                <a href="collapsible.html">Our Instructors</a>
             </li>
             <div class="divider"></div>
             <li class="center">
                 <a href="mobile.html">Contact Us</a>
             </li>
+
+            <div class="row" style="margin-top: 15%;">
+                <div class="col s12 m6 center-align">
+                    <a href="https://robinbiju4710.typeform.com/to/h0cKm0" class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
+                </div>
+            </div>
+
+
             <div class="row" style="margin-top: 15%;">
                 <div class="col s12 m6">
                     <div class="card grey darken-4">
@@ -220,11 +237,40 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                     </div>
                 </div>
             </div>
+
+            <!--
             <li class="class10 center">
                 <h6>Still Need Help? Leave us <br>a message on<br> </h6>
                 <div class="col s4 offset-4"><a class="waves-effect waves-light black white-text btn" href="http://wa.me/919995554710">WhatsApp</a></div>
 
             </li>
+            <div class="right" style="margin-right: 10%;">
+                
+                <h6 class="valign-wrapper">Still need help? <br>Leave a message on <i class="fa fa-whatsapp black-text" style="font-size:36px"></i></h6>
+            </div>
+
+            <div class="col s4 offset-4">
+                <a class="waves-effect waves-light black white-text btn" href="http://wa.me/919995554710">
+                    <p class="valign-wrapper">Still need help? <br>Leave a message on <i class="fa fa-whatsapp white-text" style="font-size:36px"></i></p>
+                </a>
+            </div>
+
+            <div class="row" style="margin-top: 15%;">
+                <div class="col s10 offset-s1">
+                    <div class="card black center">
+                        <div class="card-content white-text valign-wrapper" style="padding-left: 15%; padding-right: 10%; padding-bottom: 15%;">
+
+                            Still need help? <br>Leave a message on <i class="fa fa-whatsapp white-text" style="font-size:36px; padding-left: 10px;"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>-->
+
+
+
+
+
         </ul>
 
         <div class="row class1 center">
@@ -253,7 +299,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
         </div>
         <div class="row">
             <div class="col s12 m6 center-align">
-                <a href="https://robinbiju4710.typeform.com/to/h0cKm0" class="waves-effect waves-light btn-large class7 blue-grey darken-2">Register Now!</a>
+                <a class="waves-effect waves-light btn-large class7 blue-grey darken-2 sidenav-trigger" data-target="mobile-demo">Learn More</a>
             </div>
         </div>
 
@@ -310,7 +356,7 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
 
         </div>
 
-        <div id="modal1" class="modal">
+        <div id="whyModal" class="modal">
             <div class="modal-content">
                 <h5>Why Learn from Us?</h5><br>
                 <p>
@@ -329,10 +375,23 @@ background-image: url("https://www.transparenttextures.com/patterns/worn-dots.pn
                         </li>
                         <li>
                             <h6>Pay as you progress</h6>
-                            <p>Our classes are on a pay-per-session basis making it convenient for you to progress with at your own pace.</p>
+                            <p>Our classes are on a pay-per-session basis making it convenient for you to progress with us.</p>
                         </li>
                     </ul>
 
+                </p>
+            </div>
+
+        </div>
+
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+                <h5>About Us</h5><br>
+                <p>
+                    <b><i>JumpStarts</i></b> was created with the sole aim of enabling people to JumpStart their career in trending domains of Computer Science, Electronics and IT engineering.
+                    <br><br>While MOOCs have allowed a wide audience to learn at their own pace, the experience of learning a subject live from someone who works with it on a regular basis is truly more rewarding.
+                    <br><br>Our Instructors are experienced students who have applied knowledge in the courses that they offer. Moreover, being students themselves, they are well aware of the <i>needs of a beginner</i>. This assures a great learning experience
+                    for people of all skill levels.
                 </p>
             </div>
 
