@@ -1,64 +1,88 @@
-/* ---- reset ---- */
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
 body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
 }
 
-canvas {
-    display: block;
-    vertical-align: bottom;
+.class1 {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: -80px;
+    background-color: transparent;
 }
 
+.class2 {
+    font-family: 'Pacifico', cursive;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    background-color: transparent;
+}
 
-/* ---- particles.js container ---- */
+.class3 {
+    font-family: 'Quattrocento', serif;
+    font-size: 150%;
+    padding-top: 12%;
+    padding-bottom: 5%;
+    background-color: transparent;
+}
+
+.class4 {
+    margin-top: -20px;
+    padding-bottom: -50px;
+    background-color: transparent;
+}
+
+.class5 {
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.class6 {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    background-color: transparent;
+}
+
+.class7 {
+    border-radius: 30px;
+}
+
+.class8 {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.class9 {
+    margin-top: 10%;
+}
+
+.class10 {
+    margin-top: 20%;
+}
+
+.carousel .carousel-item {
+    margin-top: -85px;
+    margin-bottom: 50px;
+    background-color: transparent;
+}
 
 #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #b61924;
+    background-color: #ffffff;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
-
-/* ---- stats.js ---- */
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
 }
 
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
+ul#horizontal-list li {
+    display: inline;
 }
