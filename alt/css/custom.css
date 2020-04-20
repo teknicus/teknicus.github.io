@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+:root {}
+
 body {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
-.class1 {
+.logoCard {
     margin-top: 10%;
     width: 100%;
     margin-bottom: -80px;
     background-color: transparent;
 }
 
-.class2 {
+.logoText {
     font-family: 'Pacifico', cursive;
     padding-top: 9%;
     padding-bottom: 9%;

@@ -8,13 +8,13 @@ particlesJS("particles-js", {
             }
         },
         color: {
-            value: "#000000"
+            value: "#ffffff"
         },
         shape: {
             type: "circle",
             stroke: {
                 width: 0,
-                color: "#000000"
+                color: "#ffffff"
             },
             polygon: {
                 nb_sides: 5
