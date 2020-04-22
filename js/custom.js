@@ -1,3 +1,19 @@
+function fun1() {
+    var x = document.getElementById('title-card');
+    var y1 = document.getElementById('initHide1');
+    var y2 = document.getElementById('initHide2');
+    var z = document.getElementById('bodyDiv');
+    x.style.opacity = "0";
+    y1.style.opacity = '1';
+    y2.style.opacity = '1';
+    x.style.animation = "slideup 2000ms";
+
+    z.innerHTML = "<div class='head-banner-shadow initHide'> <div class='head-banner' id='initHide2'> abc </div></div>"
+
+}
+
+
+
 particlesJS("particles-js", {
     particles: {
         number: {
