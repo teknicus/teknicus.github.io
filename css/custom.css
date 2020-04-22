@@ -60,10 +60,35 @@ body {
     margin-top: 20%;
 }
 
+.des1 {
+    height: 100%;
+    width: 100%;
+}
+
 .carousel .carousel-item {
     margin-top: -85px;
     margin-bottom: 50px;
     background-color: transparent;
+}
+
+.head-banner-shadow {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.head-banner {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 50% 50%, 0% 25%);
+    height: 100vh;
+    box-shadow: 10px 10px 5px blue;
+}
+
+.title-card-shadow {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.title-card {
+    clip-path: polygon(10% 20%, 100% 0%, 100% 25%, 50% 50%);
+    height: 100vh;
+    box-shadow: 10px 10px 5px blue;
 }
 
 #particles-js {
